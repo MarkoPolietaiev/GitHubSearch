@@ -7,14 +7,25 @@
 //
 
 import XCTest
+import UIKit
 @testable import GitHubSearch
 
 class GitHubSearchTests: XCTestCase {
+    
+    private var rootViewController: StartViewController!
+    private var topLevelUIUtilities: TopLevelUIUtilities<StartViewController>!
+
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        let storyboard = UIStoryboard(name: "StartViewController",  bundle: nil)
+        let myViewController = storyboard.instantiateInitialViewController() as? StartViewController
+        myViewController!.oldRequests = ["test1", "test2", "test3"]
+        rootViewController = myViewController
+        topLevelUIUtilities = TopLevelUIUtilities<StartViewController>()
+        topLevelUIUtilities.setupTopLevelUI(withViewController: rootViewController)
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -29,6 +40,10 @@ class GitHubSearchTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testInitRepo() {
+        
     }
 
 }

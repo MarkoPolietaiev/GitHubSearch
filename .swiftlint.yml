@@ -1,0 +1,27 @@
+disabled_rules: # rule identifiers to exclude from running
+  - force_try
+  - trailing_whitespace
+  - todo
+  - identifier_name
+  - void_return
+  - colon
+  - notification_center_detachment
+excluded: # paths to ignore during linting. overridden by `included`.
+  - Carthage
+  - Pods
+  - fastlane
+  - R.generated.swift
+# parameterized rules can be customized from this configuration file
+file_length:
+  - 700
+  - 1000
+line_length:
+  - 300
+  - 350
+# parameterized rules are first parameterized as a warning level, then error level.
+function_body_length:
+  - 150 # warning
+  - 200 # error
+type_body_length:
+  - 300 # warning
+  - 400 # error

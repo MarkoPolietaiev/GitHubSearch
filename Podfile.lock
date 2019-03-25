@@ -1,0 +1,48 @@
+PODS:
+  - BaseAPI (0.1.5)
+  - DropDown (2.3.12)
+  - GithubAPI (0.0.6):
+    - BaseAPI
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
+  - SwiftLint (0.31.0)
+
+DEPENDENCIES:
+  - DropDown
+  - GithubAPI
+  - MagicalRecord
+  - R.swift
+  - SQLite.swift
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BaseAPI
+    - DropDown
+    - GithubAPI
+    - MagicalRecord
+    - R.swift
+    - R.swift.Library
+    - SQLite.swift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  BaseAPI: 9248feed65933cd20283514e7a9917ecba1b69c0
+  DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
+  GithubAPI: bc5bfd90489f5138a8d1e00003b18abe31579eb0
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+
+PODFILE CHECKSUM: ae175a9d814e1a74de5ac6df8dbb6776a71ee878
+
+COCOAPODS: 1.6.1
